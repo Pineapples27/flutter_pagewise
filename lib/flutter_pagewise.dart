@@ -502,7 +502,7 @@ class PagewiseLoadController<T> extends ChangeNotifier {
   Future<void> reloadCurrentPage() async {
     if(this._loadedItems != null && pageSize != null) {
       var _endIndex = this._loadedItems!.length-1;
-      var _startIndex = _endIndex -pageSize!; 
+      var _startIndex = _endIndex -pageSize!;
       this._loadedItems!.removeRange(_startIndex, _endIndex);
     }
     this._numberOfLoadedPages--;
